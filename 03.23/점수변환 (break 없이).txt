@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int Score;
+	int MS = 4;
+	cout << " Enter your Score  :  ";
+	cin >> Score;
+	
+	switch (Score / 10) {
+	default: MS--;
+	case 6: MS--;
+	case 7: MS--;
+	case 8: MS--;
+	case 9:
+	case 10:
+		cout << " Converted Grade  :  " << MS ;
+	}
+}

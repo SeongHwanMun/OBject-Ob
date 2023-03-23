@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int Score; // 점수 변수
+	cout << " Enter your Score  :  ";
+	cin >> Score;
+
+	switch (Score / 10) {
+	default: cout << " Converted Grade : 0 " ;  break;
+	case 6: cout << " Converted Grade : 1 " ; break;
+	case 7: cout << " Converted Grade : 2 " ; break;
+	case 8: cout << " Converted Grade : 3 " ; break;
+	case 9:
+	case 10: cout << " Converted Grade : 4 ";  break;
+	}
+}

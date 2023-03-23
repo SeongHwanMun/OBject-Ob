@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int Car_Num;
+	cout << " Enter your Car Number  :  ";
+	cin >> Car_Num;
+
+	switch (Car_Num % 5)
+	{
+	case 0:
+		cout << " Last Digit Number 0,5 is not parking at Friday"; break;
+	case 1:
+		cout << " Last Digit Number 1,6 is not parking at Monday"; break;
+	case 2:
+		cout << " Last Digit Number 2,7 is not parking at Tuesday"; break;
+	case 3:
+		cout << " Last Digit Number 3,8 is not parking at Wednesday"; break;
+	case 4:
+		cout << " Last Digit Number 4,9 is not parking at Thursday"; break;
+	}
+}
