@@ -1,0 +1,31 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+using namespace std;
+
+int main() {
+	srand((unsigned int)time(NULL));
+	int Rand_Num_First, Rand_Num_Second, Answer, quest_try;
+	int Enter_Value =0,try_=0,correct =0;
+
+	while (1) {
+		Rand_Num_First = (rand() % 1000 + 1);
+		Rand_Num_Second = (rand() % 1000 + 1);
+		Answer = Rand_Num_First + Rand_Num_Second;
+		quest_try = 0;
+		do {
+			cout << "┌────────────  [Quiz] ────  correct :  " << correct << "  ───┐ " << endl;
+			cout << "│　　　　 　　　　quest try :" << quest_try << "   total try :" << try_ <<  endl;
+			cout << " ───────────────────────────────────────────" << endl;
+			cout << "　　 　              　" << Rand_Num_First << " + " << Rand_Num_Second << "　　 　" << endl ;
+			cout << "└─────────────────────────  [Answer : ";
+			cin >> Enter_Value;
+			
+			quest_try++;
+			try_++;
+			system("cls");
+		} while (Enter_Value != Answer);
+		
+		correct++;
+	}
+}
