@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int print(int Integer) {
+	cout << "(int 호출) 정수 출력 : ";
+	return Integer;
+}
+double print(double Doub_intger) {
+	cout << "(double 호출)  실수 출력 : ";
+	return Doub_intger;
+}
+
+char print(char Character) {
+	cout << "(char 호출) 문자 출력 : " ;
+	return Character;
+}
+
+int main() {
+	cout << print(100) << endl;
+	cout << print(3.14) << endl;
+	cout << print('C') << endl;
+
+	return 0;
+}
